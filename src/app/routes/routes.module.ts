@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { SharedModule } from '@shared';
 // single pages
 import { CallbackComponent } from './callback/callback.component';
+import { HomeComponent } from './childrens-day/home/home.component';
+import { ResultComponent } from './childrens-day/result/result.component';
 // dashboard pages
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UserLockComponent } from './passport/lock/lock.component';
@@ -21,6 +23,8 @@ const COMPONENTS = [
   // single pages
   CallbackComponent,
   UserLockComponent,
+  HomeComponent,
+  ResultComponent
 ];
 const COMPONENTS_NOROUNT = [];
 

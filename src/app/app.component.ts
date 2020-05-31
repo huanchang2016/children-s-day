@@ -13,7 +13,7 @@ import { filter } from 'rxjs/operators';
       width: 100%;
       height: 100%;
       background: url('/assets/bg/bg.png') left top no-repeat;
-      background-size: contain;
+      background-size: 100% 100%;
       padding: 0;
     }
     

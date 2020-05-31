@@ -88,13 +88,13 @@ export class StartupService {
     // }
     // mock
     const app: any = {
-      name: `ng-alain`,
-      description: `Ng-zorro admin panel front-end framework`
+      name: `天府人资`,
+      description: `每个人心中都有一颗童心，今年六一～～小天帮你“测”童年！`
     };
     const user: any = {
       name: 'Admin',
       avatar: './assets/tmp/img/avatar.jpg',
-      email: 'cipchk@qq.com',
+      email: 'cdtfhr@admin.com',
       token: '123456789'
     };
     // Application information: including site name, description, year

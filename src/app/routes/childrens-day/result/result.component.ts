@@ -6,6 +6,7 @@ class Hero {
   id: number;
   name: string;
   avatar: string;
+  picture: string;
   description: string;
 }
 
@@ -15,7 +16,7 @@ class Hero {
   templateUrl: './result.component.html',
   styleUrls: ['./result.component.less']
 })
-export class ResultComponent implements AfterViewInit {
+export class ResultComponent implements OnInit, AfterViewInit {
   list:Hero[] = [];
 
   currentSelectedHero:Hero;
@@ -25,26 +26,29 @@ export class ResultComponent implements AfterViewInit {
   constructor(
     private httpClient: _HttpClient
   ) {
-    const item = localStorage.getItem('currentSelectedHero');
-    if(item) {
-      this.currentSelectedHero = JSON.parse(item);
-      console.log(this.currentSelectedHero);
-    }else {
-      this.getDataList();
-    }
+    // const item = localStorage.getItem('currentSelectedHero');
+    // if(item) {
+    //   this.currentSelectedHero = JSON.parse(item);
+    // }else {
+    //   this.getDataList();
+    // }
+    this.getDataList();
   }
+  ngOnInit() {}
 
   ngAfterViewInit(): void {
     const click$ = fromEvent(this.audioBtn.nativeElement, 'click');
     const audio:any = document.getElementById('audio'); 
-    
+    // if(audio !== null && audio.paused) {
+    //   audio.play();
+    // }
     click$.subscribe(e => {
       if(audio!==null){             
         //检测播放是否已暂停.audio.paused 在播放器播放时返回false.
         if(audio.paused)                     {                 
-            audio.play();//audio.play();// 这个就是播放  
+          audio.play();//audio.play();// 这个就是播放  
         }else{
-        audio.pause();// 这个就是暂停
+          audio.pause();// 这个就是暂停
         }
       }
     });
@@ -52,7 +56,6 @@ export class ResultComponent implements AfterViewInit {
 
   getDataList():void {
     this.httpClient.get('/assets/data/data.json').subscribe((res:Hero[]) => {
-      console.log(res);
       this.list = res;
       this.chooseAnyOne();
     })
@@ -61,8 +64,10 @@ export class ResultComponent implements AfterViewInit {
 
   chooseAnyOne():void {
     const rand:number = Math.floor(Math.random() * (this.list.length));
-    this.currentSelectedHero = this.list[rand];
-    console.log(rand, this.currentSelectedHero);
-    localStorage.setItem('currentSelectedHero', JSON.stringify(this.currentSelectedHero));
+    setTimeout(() => {
+      this.currentSelectedHero = this.list[rand];
+    }, 800);
+    
+    // localStorage.setItem('currentSelectedHero', JSON.stringify(this.currentSelectedHero));
   }
 }

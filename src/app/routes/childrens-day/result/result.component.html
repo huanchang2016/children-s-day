@@ -1,16 +1,31 @@
 <div class="box">
     <div #audioBtn id="audio-btn" class="music-btn-box"><img src="assets/audio/music.png" alt=""></div>
-    <audio #audio id="audio" loop>
+    <audio #audio id="audio" autoplay loop>
         <source src="assets/audio/music.mp3" type="audio/mp3">
     </audio>
 
     <div class="result-box">
-        <div class="result-hero-box">
-            <img [src]="currentSelectedHero.avatar" [alt]="currentSelectedHero.name">
+        <div *ngIf="currentSelectedHero;else notData">
+            <div class="result-hero-box">
+                <img [src]="currentSelectedHero.avatar" [alt]="currentSelectedHero.name">
+            </div>
+            <!-- <p class="m0 py-sm text-center text-md font-weight-bold text-white">{{ currentSelectedHero.name }}</p> -->
+            <div class="result-hero-title-box">
+                <div class="title-box text-center my-sm">
+                    <img src="assets/title/ylnjs.png" alt="原来你就是">
+                </div>
+                <div class="name-box text-center">
+                    <img [src]="currentSelectedHero.picture" [alt]="currentSelectedHero.name">
+                </div>
+            </div>
+            <div class="result-footer-box d-flex align-items-center">
+                <span class="hero-text font-weight-bold text-white">{{ currentSelectedHero.description }}</span>
+            </div>
         </div>
-        <p class="m0 py-sm text-center text-md font-weight-bold text-white">{{ currentSelectedHero.name }}</p>
-        <div class="result-footer-box d-flex align-items-center">
-            <div class="hero-text">{{ currentSelectedHero.description }}</div>
-        </div>
+        <ng-template #notData>
+            <div class="example-loading d-flex align-items-center justify-content-center">
+                <nz-spin nzSimple nzTip="人物加载中..."></nz-spin>
+              </div> 
+        </ng-template>
 </div>
 </div>

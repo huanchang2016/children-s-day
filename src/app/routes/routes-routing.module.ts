@@ -39,7 +39,7 @@ const routes: Routes = [
       children: [
         { path: '', redirectTo: 'result', pathMatch: 'full' },
         { path: 'home', component: HomeComponent },
-        { path: 'result', component: ResultComponent }
+        { path: 'result', component: ResultComponent, data: { title: '儿童节·节日快乐'} }
       ]
   },
   // passport

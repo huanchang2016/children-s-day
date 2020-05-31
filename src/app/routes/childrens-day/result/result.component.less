@@ -1,13 +1,13 @@
 .box {
 
     .music-btn-box {
-        width: 40px;
-        height: 40px;
+        width: 42px;
+        height: 42px;
         overflow: hidden;
         border-radius: 50%;
         position: absolute;
-        right: 12px;
-        top: 38px;
+        right: 0.8rem;
+        top: 2.2rem;
 
         img {
             width: 100%;
@@ -18,29 +18,61 @@
         width: 100%;
         height: 100%;
         overflow: hidden;
+
         .result-hero-box {
-            width: 250px;
-            height: 250px;
+            width: 70vw;
+            height: 70vw;
             overflow: hidden;
             border-radius: 50%;
-            margin: 40px auto 0;
+            margin: 1rem auto 0;
+
             img {
                 width: 100%;
             }
         }
 
-        .result-footer-box {
-            width: 80%;
-            padding: 16px;
-            margin: 15px auto 0;
-            overflow: hidden;
-            background: rgba(255, 255, 255, 0.3);
-            border-radius: 4px;
-            .hero-text {
-                font-size: 16px;
+        .result-hero-title-box {
+            img {
+                max-width: 100%;
+                max-height: 2rem;
             }
         }
 
+        .result-footer-box {
+            width: 88%;
+            padding: 1rem;
+            margin: 0 auto;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            z-index: 2;
+            position: relative;
+
+            .hero-text {
+                font-size: 18px;
+            }
+        }
+
+        .example-loading {
+            text-align: center;
+            width: 80vw;
+            height: 80vw;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            margin: 1.5rem auto;
+        }
+
+    }
+
+}
+
+:host ::ng-deep {
+    .ant-spin-dot-item {
+        background-color: #fff;
+    }
+    .ant-spin-text {
+        color: #fff;
+        font-size: 16px;
     }
 
 }
