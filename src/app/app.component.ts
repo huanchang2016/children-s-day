@@ -7,7 +7,17 @@ import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
-  template: ` <router-outlet></router-outlet> `,
+  template: ` <router-outlet></router-outlet>`,
+  styles: [`
+    :host ::ng-deep .alain-fullscreen {
+      width: 100%;
+      height: 100%;
+      background: url('/assets/bg/bg.png') left top no-repeat;
+      background-size: contain;
+      padding: 0;
+    }
+    
+  `]
 })
 export class AppComponent implements OnInit {
   constructor(

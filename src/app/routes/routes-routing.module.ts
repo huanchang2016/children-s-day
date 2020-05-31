@@ -37,7 +37,7 @@ const routes: Routes = [
       path: 'children',
       component: LayoutFullScreenComponent,
       children: [
-        { path: '', redirectTo: 'home', pathMatch: 'full' },
+        { path: '', redirectTo: 'result', pathMatch: 'full' },
         { path: 'home', component: HomeComponent },
         { path: 'result', component: ResultComponent }
       ]

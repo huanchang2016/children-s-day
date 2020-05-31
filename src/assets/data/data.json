@@ -1,0 +1,140 @@
+[
+    {
+        "id": 1,
+        "name": "柯南",
+        "avatar": "assets/imgs/kenan.jpg",
+        "description": "就是因为生命有限才更显得可贵，就因为有限人们才会努力。"
+    },
+    {
+        "id": 2,
+        "name": "哆啦A梦",
+        "avatar": "assets/imgs/dlam.jpg",
+        "description": "如果可以的话，我会回到我们相遇的那天，继续我们的相遇。"
+    },
+    {
+        "id": 3,
+        "name": "圣斗士星矢",
+        "avatar": "assets/imgs/sdsxs.jpg",
+        "description": "你抛弃了友谊和眼泪，就毫无胜利的希望了！"
+    },
+    {
+        "id": 4,
+        "name": "阿童木",
+        "avatar": "assets/imgs/atm.jpg",
+        "description": "只有人类独自繁荣的世界总有一天会没落的。"
+    },
+    {
+        "id": 5,
+        "name": "美少女战士水冰月",
+        "avatar": "assets/imgs/msnzssby.jpg",
+        "description": "代表月亮消灭你！"
+    },
+    {
+        "id": 6,
+        "name": "樱木花道",
+        "avatar": "assets/imgs/ymhd.jpg",
+        "description": "因为，我是天才！"
+    },
+    {
+        "id": 7,
+        "name": "三井寿",
+        "avatar": "assets/imgs/sjs.jpg",
+        "description": "教练，我想打篮球！"
+    },
+    {
+        "id": 8,
+        "name": "大力水手",
+        "avatar": "assets/imgs/dlss.jpg",
+        "description": "我是大力水手,我喜欢吃菠菜,因此我力大无比!"
+    },
+    {
+        "id": 9,
+        "name": "金刚葫芦娃",
+        "avatar": "assets/imgs/jghlw.jpg",
+        "description": "妖精，快放开我的爷爷！"
+    },
+    {
+        "id": 10,
+        "name": "一休哥",
+        "avatar": "assets/imgs/yxg.jpg",
+        "description": "休息，休息一下！"
+    },
+    {
+        "id": 11,
+        "name": "上杉达也",
+        "avatar": "assets/imgs/ssdy.jpg",
+        "description": "我要去甲子园了！"
+    },
+    {
+        "id": 12,
+        "name": "天线宝宝",
+        "avatar": "assets/imgs/txbb.jpg",
+        "description": "天线宝宝时间！"
+    },
+    {
+        "id": 13,
+        "name": "孙悟空",
+        "avatar": "assets/imgs/swk.jpg",
+        "description": "吃俺老孙一棒！"
+    },
+    {
+        "id": 14,
+        "name": "哪吒",
+        "avatar": "assets/imgs/nazhua.jpg",
+        "description": "我命由我，不由天!是魔是仙，我自己决定!"
+    },
+    {
+        "id": 15,
+        "name": "乔巴",
+        "avatar": "assets/imgs/qbqiaoba.jpg",
+        "description": "我是怪物，天下无敌！"
+    },
+    {
+        "id": 16,
+        "name": "凯",
+        "avatar": "assets/imgs/kai.jpg",
+        "description": "不相信自己的人，连努力的价值都没有。"
+    },
+    {
+        "id": 17,
+        "name": "千寻",
+        "avatar": "assets/imgs/qianxun.jpg",
+        "description": "不管前方的路有多苦，不管多么崎岖不平，都比站在原地更接近幸福。"
+    },
+    {
+        "id": 18,
+        "name": "小智",
+        "avatar": "assets/imgs/pkq.jpg",
+        "description": "皮卡丘，上！"
+    },
+    {
+        "id": 19,
+        "name": "黑猫警长",
+        "avatar": "assets/imgs/hmjz.jpg",
+        "description": "站住，不然我要开枪了！"
+    },
+    {
+        "id": 20,
+        "name": "中华小当家",
+        "avatar": "assets/imgs/zhxdj.jpg",
+        "description": "这种浓郁的味道真的不可思议！"
+    },
+    {
+        "id": 21,
+        "name": "拉蒂兹",
+        "avatar": "assets/imgs/ldz.jpg",
+        "description": "战斗力只有5的渣滓。"
+    },
+    {
+        "id": 22,
+        "name": "花仙子",
+        "avatar": "assets/imgs/hxz.jpg",
+        "description": "花儿，花儿变！"
+    },
+    {
+        "id": 23,
+        "name": "明日香",
+        "avatar": "assets/imgs/mrx.jpg",
+        "description": "自尊心受到伤害的话，我一定要十倍奉还！"
+    }
+]

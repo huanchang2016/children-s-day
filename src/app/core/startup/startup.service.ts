@@ -125,6 +125,16 @@ export class StartupService {
     // Can be set page suffix title, https://ng-alain.com/theme/title
     this.titleService.suffix = app.name;
 
+
+    // const item = localStorage.getItem('currentSelectedHero');
+    // if(item) {
+    //   console.log('storage has data')
+    //   this.injector.get(Router).navigateByUrl('/children/result');
+    // }else {
+    //   console.log('not storage')
+    //   this.injector.get(Router).navigateByUrl('/children/home');
+    // }
+
     resolve({});
   }
 
