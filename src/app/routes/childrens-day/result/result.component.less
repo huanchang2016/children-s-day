@@ -1,4 +1,8 @@
 .box {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 3rem;
+    overflow: hidden;
 
     .music-btn-box {
         width: 42px;
@@ -14,17 +18,31 @@
         }
     }
 
+    .logo-box {
+        max-width: 60%;
+        img {
+            width: 100%;
+        }
+    }
+
+
     .result-box {
+        flex-grow: 1;
         width: 100%;
         height: 100%;
         overflow: hidden;
+        &>div {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
 
         .result-hero-box {
             width: 70vw;
             height: 70vw;
             overflow: hidden;
             border-radius: 50%;
-            margin: 1rem auto 0;
+            // margin: 1rem auto 0;
 
             img {
                 width: 100%;
@@ -62,6 +80,41 @@
             margin: 1.5rem auto;
         }
 
+    }
+
+    .logo-bg-box {
+        width: 100vw;
+        min-height: 100px;
+        overflow: hidden;
+        position: relative;
+        .pencil-box {
+            width: 80px;
+            position: absolute;
+            left: 6px;
+            bottom: 10px;
+            img {
+                max-height: 90px;
+            }
+        }
+    
+        .refer-box {
+            width: 148px;
+            position: absolute;
+            right: 75px;
+            bottom: 10px;
+            .refer-img0 {
+                margin-bottom: -1rem;
+            }
+        }
+        .qrcode-box {
+            width: 64px;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+        img {
+            width: 100%;
+        }
     }
 
 }

@@ -88,7 +88,7 @@ export class StartupService {
     // }
     // mock
     const app: any = {
-      name: `天府人资`,
+      name: `天府菁英`,
       description: `每个人心中都有一颗童心，今年六一～～小天帮你“测”童年！`
     };
     const user: any = {
